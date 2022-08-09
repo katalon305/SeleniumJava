@@ -50,7 +50,7 @@ public class Project {
 		helpers.sleepSeconds(3);
 	}
 	
-	@Test
+	@Test(description = "Login test by SIGN-ON")
 	public void testLogin() {
 		//WebDriverManager.setWindowSize(driver, "fullscreen");
 		driver.switchTo().window(tabs.get(1)).navigate().to("https://www.selenium.dev/downloads/");
@@ -65,7 +65,7 @@ public class Project {
 		pageLogon.assertLogonPage();
 	}
 	
-	@Test
+	@Test(description = "Login test with assertPage")
 	public void testFlight() {
 		//WebDriverManager.setWindowSize(driver, "fullscreen");
 		driver.switchTo().window(tabs.get(0));
@@ -80,7 +80,7 @@ public class Project {
 		pageReservation.assertPage();
 	}
 	
-	@Test
+	@Test(description = "Flight test and select airport")
 	public void testDropdown() {
 		//WebDriverManager.setWindowSize(driver, "maximized");
 		driver.switchTo().window(tabs.get(0));
@@ -101,7 +101,7 @@ public class Project {
 		pageReservation.selectToPort("London");
 	}
 	
-	@Test
+	@Test(description = "Total fields test")
 	public void testTotalFields() {
 		//WebDriverManager.setWindowSize(driver, "maximized");
 		driver.switchTo().window(tabs.get(0));
@@ -109,7 +109,7 @@ public class Project {
 		pageLogin.verifyElements();
 	}
 	
-	@Test
+	@Test(description = "Title in user fields test")
 	public void testTitleInUserField() {
 		driver.switchTo().window(tabs.get(0));
 
@@ -120,6 +120,7 @@ public class Project {
 
 	@AfterMethod
 	public void afterMethod(ITestResult iTestResult) {
+		System.out.println("Test " + iTestResult.getMethod().getDescription() + ", by status " + iTestResult.getStatus());
 		if(!iTestResult.isSuccess()) {
 			Screenshooter.takeScreenshot("Error", driver);
 		}

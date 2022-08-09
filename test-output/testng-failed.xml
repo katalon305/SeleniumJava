@@ -5,7 +5,7 @@
     <classes>
       <class name="com.demo.Project">
         <methods>
-          <include name="testCantidadCampos"/>
+          <include name="testTitleInUserField"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
         </methods>
