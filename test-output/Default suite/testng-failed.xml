@@ -5,9 +5,8 @@
     <classes>
       <class name="com.demo.Project">
         <methods>
-          <include name="testLogin"/>
+          <include name="testCantidadCampos"/>
           <include name="afterMethod"/>
-          <include name="testFlight"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.demo.Project -->

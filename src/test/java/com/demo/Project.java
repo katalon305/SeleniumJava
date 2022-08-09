@@ -24,6 +24,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -38,6 +39,9 @@ public class Project {
 	public void beforeMethod() {
 		Helpers helpers = new Helpers();
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+		//ChromeOptions chromeOptions = new ChromeOptions();
+		//chromeOptions.addArguments("--headless");
+		//driver = new ChromeDriver(chromeOptions);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.guru99.com/selenium/newtours/");//https://demo.guru99.com/test/newtours/
@@ -98,11 +102,20 @@ public class Project {
 	}
 	
 	@Test
-	public void testCantidadCampos() {
+	public void testTotalFields() {
 		//WebDriverManager.setWindowSize(driver, "maximized");
 		driver.switchTo().window(tabs.get(0));
 		PageLogin pageLogin = new PageLogin(driver);
 		pageLogin.verifyElements();
+	}
+	
+	@Test
+	public void testTitleInUserField() {
+		driver.switchTo().window(tabs.get(0));
+
+		PageLogin pageLogin = new PageLogin(driver);
+		pageLogin.putTitleInUserField();
+		//Screenshooter.takeScreenshot("TitleInUserField", driver);
 	}
 
 	@AfterMethod
