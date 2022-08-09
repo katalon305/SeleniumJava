@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-09T15:10:02Z" name="Default suite" finished-at="2022-08-09T15:10:52Z" duration-ms="50233">
+    <groups>
+    </groups>
+    <test started-at="2022-08-09T15:10:02Z" name="Default test" finished-at="2022-08-09T15:10:52Z" duration-ms="50233">
+      <class name="com.demo.Project">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.demo.Project@409c54f]" started-at="2022-08-09T15:10:02Z" name="beforeMethod" finished-at="2022-08-09T15:10:09Z" duration-ms="6816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCantidadCampos()[pri:0, instance:com.demo.Project@409c54f]" started-at="2022-08-09T15:10:09Z" name="testCantidadCampos" finished-at="2022-08-09T15:10:09Z" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCantidadCampos -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.demo.Project@409c54f]" started-at="2022-08-09T15:10:09Z" name="afterMethod" finished-at="2022-08-09T15:10:09Z" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCantidadCampos status=SUCCESS method=Project.testCantidadCampos()[pri:0, instance:com.demo.Project@409c54f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.demo.Project@409c54f]" started-at="2022-08-09T15:10:09Z" name="beforeMethod" finished-at="2022-08-09T15:10:15Z" duration-ms="6408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testDropdown()[pri:0, instance:com.demo.Project@409c54f]" started-at="2022-08-09T15:10:15Z" name="testDropdown" finished-at="2022-08-09T15:10:27Z" duration-ms="11285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDropdown -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.demo.Project@409c54f]" started-at="2022-08-09T15:10:27Z" name="afterMethod" finished-at="2022-08-09T15:10:27Z" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDropdown status=SUCCESS method=Project.testDropdown()[pri:0, instance:com.demo.Project@409c54f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.demo.Project@409c54f]" started-at="2022-08-09T15:10:27Z" name="beforeMethod" finished-at="2022-08-09T15:10:34Z" duration-ms="6832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testFlight()[pri:0, instance:com.demo.Project@409c54f]" started-at="2022-08-09T15:10:34Z" name="testFlight" finished-at="2022-08-09T15:10:39Z" duration-ms="4823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlight -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.demo.Project@409c54f]" started-at="2022-08-09T15:10:39Z" name="afterMethod" finished-at="2022-08-09T15:10:39Z" duration-ms="169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFlight status=SUCCESS method=Project.testFlight()[pri:0, instance:com.demo.Project@409c54f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.demo.Project@409c54f]" started-at="2022-08-09T15:10:39Z" name="beforeMethod" finished-at="2022-08-09T15:10:45Z" duration-ms="6581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLogin()[pri:0, instance:com.demo.Project@409c54f]" started-at="2022-08-09T15:10:45Z" name="testLogin" finished-at="2022-08-09T15:10:52Z" duration-ms="6621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.demo.Project@409c54f]" started-at="2022-08-09T15:10:52Z" name="afterMethod" finished-at="2022-08-09T15:10:52Z" duration-ms="260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=Project.testLogin()[pri:0, instance:com.demo.Project@409c54f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.demo.Project -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
